@@ -1,0 +1,181 @@
+/*
+Theme Name: CTO Blocksy Child
+Theme URI: https://www.terapiasyosteopatia.es/
+Description: Tema hijo para personalizaciones de la web CTO sobre Blocksy.
+Author: MLC
+Template: blocksy
+Version: 1.0.0
+Text Domain: blocksy-child-cto
+*/
+
+/* Personalizaciones CTO */
+
+/* Cabecera CTO */
+#header.ct-header [data-device="desktop"] [data-row="middle"] {
+  --height: 132px;
+  background: #ffffff;
+  border-bottom: 1px solid #dbe3e8;
+}
+
+#header.ct-header [data-device="desktop"] .ct-container {
+  width: min(100%, 1920px);
+  max-width: none;
+  padding-inline: 72px 28px;
+}
+
+#header.ct-header [data-device="desktop"] [data-column="start"] {
+  min-width: 230px;
+}
+
+#header.ct-header [data-device="desktop"] [data-column="end"] [data-items="primary"] {
+  align-items: center;
+  gap: 14px;
+}
+
+#header.ct-header .site-branding {
+  gap: 0;
+}
+
+#header.ct-header .site-title-container {
+  display: none;
+}
+
+#header.ct-header .site-logo-container img {
+  width: 178px;
+  max-width: 178px;
+  height: auto;
+}
+
+#header.ct-header .ct-header-search {
+  display: none;
+}
+
+#header-menu-1 .menu {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+#header-menu-1 .menu > li {
+  display: flex;
+  margin: 0;
+}
+
+#header-menu-1 .menu > li > .ct-menu-link {
+  min-height: 44px;
+  padding: 0 13px;
+  color: #3a4f66;
+  --theme-font-size: 13px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+#header-menu-1 .menu > li > .ct-menu-link *,
+#header-menu-1 .menu > li > .ct-menu-link span {
+  font-size: 13px;
+}
+
+#header-menu-1 .menu > li.page-item-73 > .ct-menu-link,
+#header-menu-1 .menu > li.page-item-70 > .ct-menu-link {
+  min-width: 116px;
+  justify-content: center;
+  border-radius: 3px;
+  background: #3a4f66;
+  color: #ffffff;
+  letter-spacing: 0.08em;
+}
+
+#header-menu-1 .menu > li.page-item-70 > .ct-menu-link {
+  min-width: 152px;
+}
+
+#header.ct-header .boton-formacion {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 126px;
+  padding: 0 18px;
+  border-radius: 3px;
+  border-color: #3a4f66;
+  background: #3a4f66;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+#header.ct-header .boton-formacion + .boton-formacion {
+  min-width: 166px;
+}
+
+#header.ct-header .ct-header-socials {
+  --theme-icon-size: 22px;
+  gap: 12px;
+  margin-left: 6px;
+}
+
+#header.ct-header .ct-header-socials .ct-icon-container,
+#header.ct-header .ct-header-socials a {
+  width: 22px;
+  height: 22px;
+}
+
+#header.ct-header .ct-header-socials svg {
+  width: 22px;
+  height: 22px;
+}
+
+@media (max-width: 1340px) {
+  #header.ct-header .site-logo-container img {
+    width: 150px;
+    max-width: 150px;
+  }
+
+  #header.ct-header [data-device="desktop"] [data-column="start"] {
+    min-width: 190px;
+  }
+
+  #header-menu-1 .menu {
+    gap: 4px;
+  }
+
+  #header-menu-1 .menu > li > .ct-menu-link {
+    padding-inline: 8px;
+    --theme-font-size: 12px;
+    font-size: 12px;
+  }
+
+  #header.ct-header .boton-formacion {
+    min-height: 42px;
+    min-width: 112px;
+    padding-inline: 14px;
+    font-size: 12px;
+  }
+
+  #header.ct-header .boton-formacion + .boton-formacion {
+    min-width: 150px;
+  }
+
+  #header.ct-header .ct-header-socials {
+    --theme-icon-size: 20px;
+  }
+
+  #header.ct-header .ct-header-socials .ct-icon-container,
+  #header.ct-header .ct-header-socials a,
+  #header.ct-header .ct-header-socials svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 999.98px) {
+  #header.ct-header .site-logo-container img {
+    width: 112px;
+    max-width: 112px;
+  }
+}
